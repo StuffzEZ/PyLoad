@@ -2,7 +2,7 @@ name: Upload Python Package to PyPI when a Release is Created
 
 on:
   release:
-    types: [created]
+    types: [created, edited]
 
 jobs:
   pypi-publish:
@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: pypi
-      url: https://pypi.org/p/PyLoadRe  # Change to your package name
+      url: https://pypi.org/p/PyLoadRe
     permissions:
       id-token: write
     
