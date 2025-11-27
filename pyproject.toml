@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=42","wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyload"
+version = "0.1.0"
+description = "Auto-reloading Python script runner"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = ["watchdog"]
+authors = [
+    {name = "StuffzEZ"}
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent"
+]
+
+[project.scripts]
+pyload = "pyload.main:main"
